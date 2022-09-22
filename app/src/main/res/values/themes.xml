@@ -17,4 +17,42 @@
         <item name="android:windowExitTransition">@transition/trans_anime</item>
 
     </style>
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryLightColor</item>
+        <item name="colorAccent">@color/primaryDarkColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/fontSize1</item>
+        <item name="editTextStyle">@style/EditTextTest</item>
+        <item name="android:textViewStyle">@style/TextViewCustom</item>
+    </style>
+    <style name="AppThemeBlue" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="colorPrimaryDark">@color/secondaryLightColor</item>
+        <item name="colorAccent">@color/secondaryDarkColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/fontSize1</item>
+    </style>
+
+    <style name="EditTextTest" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/primaryLightColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:padding">@dimen/textPadding</item>
+        <item name="android:layout_width">@dimen/width</item>
+        <item name="android:layout_height">@dimen/height</item>
+    </style>
+
+    <style name="EditTextCustom" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/primaryTextColor</item>
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:padding">@dimen/textPadding</item>
+        <item name="android:layout_width">@dimen/width</item>
+        <item name="android:layout_height">@dimen/height</item>
+    </style>
+
+    <style name="TextViewCustom">
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>
